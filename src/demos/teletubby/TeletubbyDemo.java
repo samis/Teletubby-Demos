@@ -11,10 +11,15 @@ import lib.teletubbies.*;
 public class TeletubbyDemo {
     Dipsy d = new Dipsy(50, SpeciesEnum.Dipsy, 70);
     int tubbyage = d.getTubbyAge();
-    Integer myint = new Integer(tubbyage);
-    String age = myint.toString();
+    String age = new Integer(tubbyage).toString();
     int tubbyweight = d.getTubbyWeight();
-    Integer myint2 = new Integer(tubbyweight);
-    String weight = myint2.toString();
+    String weight = new Integer(tubbyweight).toString();
     String species = d.getSpecies();
+    String pofood = d.getPoFoodFavorite();
+    double tubbystrength = d.getStrength();
+    String strength = new Double(tubbystrength).toString();
+    boolean ishybrid = d.isHybrid();
+    boolean isfemale = d.isFemale();
+    String gender = new Boolean(isfemale).toString();
+    String hybrid = new Boolean(ishybrid).toString();
 }
