@@ -8,7 +8,7 @@
  *
  * Created on 05-Apr-2012, 21:39:34
  */
-package demos.teletubby;
+package demos.teletubby.gui;
 /**
  *
  * @author samis
@@ -31,7 +31,7 @@ public class TeletubbyGUIDemo extends javax.swing.JFrame {
     private void initComponents() {
 
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 32767));
-        theGUI1 = new demos.teletubby.TheGUI();
+        theGUI1 = new demos.teletubby.gui.TheGUI();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Teletubby GUI Demo");
@@ -103,6 +103,6 @@ public class TeletubbyGUIDemo extends javax.swing.JFrame {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.Box.Filler filler1;
-    private demos.teletubby.TheGUI theGUI1;
+    private demos.teletubby.gui.TheGUI theGUI1;
     // End of variables declaration//GEN-END:variables
 }

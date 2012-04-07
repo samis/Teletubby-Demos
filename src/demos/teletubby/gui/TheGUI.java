@@ -8,7 +8,7 @@
  *
  * Created on 06-Apr-2012, 20:56:59
  */
-package demos.teletubby;
+package demos.teletubby.gui;
 
 /**
  *
