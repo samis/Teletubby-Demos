@@ -19,7 +19,6 @@ public class TeletubbyDemo {
     double tubbystrength = d.getStrength();
     String strength = new Double(tubbystrength).toString();
     boolean ishybrid = d.isHybrid();
-    boolean isfemale = d.isFemale();
-    String gender = new Boolean(isfemale).toString();
+    String gender = d.gender();
     String hybrid = new Boolean(ishybrid).toString();
 }
