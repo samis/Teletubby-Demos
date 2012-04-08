@@ -60,6 +60,7 @@ public class TeletubbyPanel extends javax.swing.JPanel {
         jLabel2.setText("Profile of the Dipsy");
 
         jTextPane1.setText(td.profile);
+        jTextPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jScrollPane1.setViewportView(jTextPane1);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
