@@ -21,11 +21,12 @@ import javax.swing.*;
  */
 public class TeletubbyPanel_Image extends javax.swing.JPanel {
     BufferedImage img;
+    String file = "dipsy.jpg";
 
     /** Creates new form TeletubbyPanel_Image */
     public TeletubbyPanel_Image() {
         try {
-            img = ImageIO.read(new File("dipsy.jpg"));
+            img = ImageIO.read(new File(file));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -44,6 +45,8 @@ public class TeletubbyPanel_Image extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+
+        setMinimumSize(new java.awt.Dimension(360, 274));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
