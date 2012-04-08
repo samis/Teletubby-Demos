@@ -10,7 +10,7 @@ import java.io.*;
  * @author samis
  */
 public class guiHelper {
-    String profile;
+    String profile = "";
     Dipsy d = new Dipsy(50, SpeciesEnum.Dipsy, 70);
     int tubbyage = d.getTubbyAge();
     String age = new Integer(tubbyage).toString();
@@ -27,9 +27,11 @@ public class guiHelper {
         try {
             FileReader fr = new FileReader(profile_file);
             BufferedReader br = new BufferedReader(fr);
-            String line;
+            String line = "";
             while ((line = br.readLine()) != null) {
-                profile = profile.concat(line);
+                if(line != null) {
+                    profile = profile.concat(line);
+                }
             }
         }
         catch(IOException e) {
