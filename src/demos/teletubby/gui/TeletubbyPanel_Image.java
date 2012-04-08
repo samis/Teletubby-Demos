@@ -8,6 +8,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.awt.image.*;
 import java.io.*;
+import java.util.ResourceBundle;
 import javax.imageio.*;
 import javax.swing.*;
 /*
@@ -20,6 +21,7 @@ import javax.swing.*;
  * @author samis
  */
 public class TeletubbyPanel_Image extends javax.swing.JPanel {
+    private static final ResourceBundle bundle = ResourceBundle.getBundle("demos/teletubby/Bundle");
     BufferedImage img;
     String file = "dipsy.jpg";
 

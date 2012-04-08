@@ -10,11 +10,14 @@
  */
 package demos.teletubby.gui;
 
+import java.util.ResourceBundle;
+
 /**
  *
  * @author samis
  */
 public class MainWindow extends javax.swing.JFrame {
+    private static final ResourceBundle bundle = ResourceBundle.getBundle("demos/teletubby/Bundle");
 
     /** Creates new form MainWindow */
     public MainWindow() {
@@ -63,8 +66,8 @@ public class MainWindow extends javax.swing.JFrame {
             .addGap(0, 294, Short.MAX_VALUE)
         );
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel1.setText("Dipsy");
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24));
+        jLabel1.setText(bundle.getString("DIPSY")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

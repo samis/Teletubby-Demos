@@ -10,11 +10,14 @@
  */
 package demos.teletubby.gui;
 
+import java.util.ResourceBundle;
+
 /**
  *
  * @author samis
  */
 public class TeletubbyPanel extends javax.swing.JPanel {
+    private static final ResourceBundle bundle = ResourceBundle.getBundle("demos/teletubby/Bundle");
     String profile;
     guiHelper td = new guiHelper();
 
@@ -52,12 +55,12 @@ public class TeletubbyPanel extends javax.swing.JPanel {
         jLabel9 = new javax.swing.JLabel();
         jTextField6 = new javax.swing.JTextField();
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel1.setText("Profile of Dipsy");
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24));
+        jLabel1.setText(bundle.getString("DIPSYPROFILE")); // NOI18N
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel2.setText("Profile of the Dipsy");
+        jLabel2.setText(bundle.getString("DIPSYPROFILE2")); // NOI18N
 
         jTextPane1.setText(td.profile);
         jTextPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
@@ -89,14 +92,14 @@ public class TeletubbyPanel extends javax.swing.JPanel {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel3.setText("The Status of the Dipsy");
+        jLabel3.setText(bundle.getString("DIPSYSTATUS")); // NOI18N
 
         jLabel4.setLabelFor(jTextField1);
-        jLabel4.setText("Age");
+        jLabel4.setText(bundle.getString("AGE")); // NOI18N
 
         jTextField1.setText(td.age);
 
-        jLabel5.setText("Weight");
+        jLabel5.setText(bundle.getString("WEIGHT")); // NOI18N
 
         jTextField2.setText(td.weight);
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
@@ -105,7 +108,7 @@ public class TeletubbyPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel6.setText("Type");
+        jLabel6.setText(bundle.getString("TYPE")); // NOI18N
 
         jTextField3.setText(td.species);
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
@@ -114,7 +117,7 @@ public class TeletubbyPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel7.setText("Gender");
+        jLabel7.setText(bundle.getString("GENDER")); // NOI18N
 
         jTextField4.setText(td.gender);
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
@@ -123,7 +126,7 @@ public class TeletubbyPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel8.setText("Strength");
+        jLabel8.setText(bundle.getString("STRENGTH")); // NOI18N
 
         jTextField5.setText(td.strength);
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
@@ -132,7 +135,7 @@ public class TeletubbyPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel9.setText("Favorite Po Food Flavour");
+        jLabel9.setText(bundle.getString("POFOOD")); // NOI18N
 
         jTextField6.setText(td.pofood);
         jTextField6.addActionListener(new java.awt.event.ActionListener() {

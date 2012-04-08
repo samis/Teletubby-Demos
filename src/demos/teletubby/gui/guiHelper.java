@@ -3,6 +3,7 @@
  * and open the template in the editor.
  */
 package demos.teletubby.gui;
+import java.util.ResourceBundle;
 import lib.teletubbies.*;
 import java.io.*;
 /**
@@ -10,6 +11,7 @@ import java.io.*;
  * @author samis
  */
 public class guiHelper {
+    private static final ResourceBundle bundle = ResourceBundle.getBundle("demos/teletubby/Bundle");
     String profile = "";
     Dipsy d = new Dipsy(50, SpeciesEnum.Dipsy, 70);
     int tubbyage = d.getTubbyAge();
