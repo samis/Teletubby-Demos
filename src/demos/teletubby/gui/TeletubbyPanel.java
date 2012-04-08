@@ -16,7 +16,7 @@ package demos.teletubby.gui;
  */
 public class TeletubbyPanel extends javax.swing.JPanel {
     String profile;
-    TeletubbyDemo td = new TeletubbyDemo();
+    guiHelper td = new guiHelper();
 
     /** Creates new form TeletubbyPanel */
     public TeletubbyPanel() {
@@ -63,6 +63,7 @@ public class TeletubbyPanel extends javax.swing.JPanel {
         jTextArea1.setColumns(20);
         jTextArea1.setEditable(false);
         jTextArea1.setRows(5);
+        jTextArea1.setText(td.profile);
         jScrollPane1.setViewportView(jTextArea1);
 
         scrollPane1.add(jScrollPane1);

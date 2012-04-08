@@ -4,11 +4,13 @@
  */
 package demos.teletubby.gui;
 import lib.teletubbies.*;
+import java.io.*;
 /**
  *
  * @author samis
  */
-public class TeletubbyDemo {
+public class guiHelper {
+    String profile;
     Dipsy d = new Dipsy(50, SpeciesEnum.Dipsy, 70);
     int tubbyage = d.getTubbyAge();
     String age = new Integer(tubbyage).toString();
@@ -21,4 +23,21 @@ public class TeletubbyDemo {
     boolean ishybrid = d.isHybrid();
     String gender = d.gender();
     String hybrid = new Boolean(ishybrid).toString();
+    public void LoadProfile(File profile_file) {
+        try {
+            FileReader fr = new FileReader(profile_file);
+            BufferedReader br = new BufferedReader(fr);
+            String line;
+            while ((line = br.readLine()) != null) {
+                profile = profile.concat(line);
+            }
+        }
+        catch(IOException e) {
+            e.printStackTrace();
+            return;
+        }
+    }
+    public guiHelper() {
+        LoadProfile(new File("profile_dipsy.txt"));
+    }
 }
